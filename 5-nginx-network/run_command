@@ -1,2 +1,0 @@
-docker run --name nginx-hw -d --network first-nw -p 8081:80 nginx-homework
-

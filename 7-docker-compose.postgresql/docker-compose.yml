@@ -1,0 +1,15 @@
+services:
+  postgresql:
+    image: postgres
+    volumes:
+    - /home/hasya/base_01/data:/data/pg
+    environment:
+    - POSTGRES_PASSWORD=Jetbalance90
+    networks:
+    - MyPG-network
+    ports:
+    - 5432:5432
+
+networks:
+  MyPG-network:
+    driver: bridge
